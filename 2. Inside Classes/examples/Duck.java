@@ -33,7 +33,7 @@ public class Duck {
 		System.out.println("quack quack");
 		try {
 			AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(
-					"sounds/quack.wav").toURI().toURL());
+					"/Users/zhursind/projects/Linkedin/OOP/madecraft-oop/sounds/quack.wav").toURI().toURL());
 			Clip clip = AudioSystem.getClip();
 			clip.open(audioInputStream);
 			clip.start();
